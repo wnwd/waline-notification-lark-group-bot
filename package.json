@@ -1,0 +1,22 @@
+{
+  "name": "waline-notification-lark-group-bot",
+  "version": "1.0.0",
+  "description": "Notification for Lark group bot",
+  "keywords": [
+    "waline",
+    "plugin",
+    "notification",
+    "blog"
+  ],
+  "homepage": "waline-notification-lark-group-bot#readme",
+  "bugs": {
+    "url": "https://github.com/wnwd/waline-notification-lark-group-bot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wnwd/waline-notification-lark-group-bot.git"
+  },
+  "license": "MIT",
+  "author": "mapxn",
+  "main": "index.js"
+}
