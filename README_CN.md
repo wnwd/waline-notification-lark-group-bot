@@ -30,10 +30,11 @@ module.exports = Application({
 
 
 ## 环境变量
-- `LARK_GROUP_WEBHOOK`: 飞书群聊机器人 webhook URL。 例如 `https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=b55f4f3c-478c-4256-8ba9-cf217f288987`
-- `SITE_NAME`: 你的站点名字，用来显示在通知消息中。
-- `SITE_URL`: 你的站点名字，用来显示在通知消息中。
-- `LARK_TEMPLATE`: (可选) 你可以自定义通知模板，请参考官方文档 [this document](https://waline.js.org/guide/features/notification.html#%E9%80%9A%E7%9F%A5%E6%A8%A1%E6%9D%BF)。
+- `LARK_GROUP_WEBHOOK`：飞书群聊机器人 webhook URL。 例如 `https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=b55f4f3c-478c-4256-8ba9-cf217f288987`
+- `SITE_NAME`： 你的站点名字，用来显示在通知消息中。
+- `SITE_URL`：你的站点名字，用来显示在通知消息中。
+- `LARK_TITLE_TEMPLATE`：（可选）标题模板，默认为`{{self.name}} 有新评论啦`，用来显示在通知消息中的标题。
+- `LARK_TEMPLATE`：（可选）你可以自定义通知模板，请参考官方文档 [this document](https://waline.js.org/guide/features/notification.html#%E9%80%9A%E7%9F%A5%E6%A8%A1%E6%9D%BF)。
 
 默认的模板如下，使用四个连续的英文`:` 来分割标题和内容
 ```

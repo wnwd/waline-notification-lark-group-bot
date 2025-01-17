@@ -1,14 +1,15 @@
 {
   "name": "waline-notification-lark-group-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Notification for Lark group bot",
   "keywords": [
     "waline",
     "plugin",
     "notification",
-    "blog"
+    "blog",
+    "lark"
   ],
-  "homepage": "waline-notification-lark-group-bot#readme",
+  "homepage": "https://github.com/wnwd/waline-notification-lark-group-bot#readme",
   "bugs": {
     "url": "https://github.com/wnwd/waline-notification-lark-group-bot/issues"
   },

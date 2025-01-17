@@ -5,7 +5,7 @@ const crypto = require('crypto');
 module.exports = {
   hooks: {
     async postSave(comment, parent) {
-      const { LARK_GROUP_WEBHOOK, LARK_GROUP_SECRET, SITE_NAME, SITE_URL, LARK_TEMPLATE } = process.env;
+      const { LARK_GROUP_WEBHOOK, LARK_GROUP_SECRET, SITE_NAME, SITE_URL, LARK_TEMPLATE, LARK_TITLE_TEMPLATE} = process.env;
 
       if (!LARK_GROUP_WEBHOOK) {
         return false;
@@ -23,18 +23,19 @@ module.exports = {
         },
       };
 
-      const template = LARK_TEMPLATE || `{{site.name|safe}} 新评论通知::::【昵称】：{{self.nick}}
+      const title_template = LARK_TITLE_TEMPLATE || `{{site.name|safe}}  有新评论啦`;
+      const title = nunjucks.renderString(title_template, data);
+
+      const content_template = LARK_TEMPLATE || `【昵称】：{{self.nick}}
 【邮箱】：{{self.mail}}
 【内容】：{{self.comment}}
 【地址】：{{site.postUrl}}`;
 
-      const rendered = nunjucks.renderString(template, data);
-
-      const [title, content] = rendered.split('::::');
+      const content = nunjucks.renderString(content_template, data);
 
       const post = {
         en_us: {
-          title: title.trim(),
+          title: title,
           content: [
             [
               {
