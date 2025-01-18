@@ -1,7 +1,7 @@
 {
   "name": "waline-notification-lark-group-bot",
-  "version": "1.0.2",
-  "description": "Notification for Lark group bot",
+  "version": "1.0.3",
+  "description": "A Waline notification plugin that sends alerts via lark group bot",
   "keywords": [
     "waline",
     "plugin",

@@ -34,7 +34,7 @@ module.exports = Application({
 - `SITE_NAME`： 你的站点名字，用来显示在通知消息中。
 - `SITE_URL`：你的站点名字，用来显示在通知消息中。
 - `LARK_TITLE_TEMPLATE`：（可选）标题模板，默认为`{{self.name}} 有新评论啦`，用来显示在通知消息中的标题。
-- `LARK_TEMPLATE`：（可选）你可以自定义通知模板，请参考官方文档 [this document](https://waline.js.org/guide/features/notification.html#%E9%80%9A%E7%9F%A5%E6%A8%A1%E6%9D%BF)。
+- `LARK_TEMPLATE`：（可选）你可以自定义通知模板，请参考[官方文档](https://waline.js.org/guide/features/notification.html#%E9%80%9A%E7%9F%A5%E6%A8%A1%E6%9D%BF)。
 
 默认的模板如下：
 ```
